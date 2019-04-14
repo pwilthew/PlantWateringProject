@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>{{ title }}</title>
+    <style>
+	body {
+	  text-align: center;
+	  background-color: black;
+	}
+	h1 {
+	  color: #4CAF50;
+	  font-family: verdana;
+	  font-size: 300%;
+	}
+	a, p, h2  {
+	  color: white;
+	  font-family: courier;
+	  font-size: 160%;
+	}
+	.button {
+	  border-radius: 12px;
+	  background-color: #4CAF50;/
+	  border: none;
+	  color: white;
+	  padding: 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 100%;
+	  cursor: pointer;
+	}
+    </style>
+</head>
+
+<body>
+    <h1>Plant Watering Control Panel</h1>
+    <h2>Date and time: {{ time }}</h2>
+    <a href="/water"><button class="button">Water now!</button></a>
+    <a href="/moisture"><button class="button">Check Moisture</button></a> 
+    <a href="/last_watered"><button class="button">Check Last Time Watered</button></a>
+    <br>
+    <p> {{ text }} </p>
+</body>
+</html>
